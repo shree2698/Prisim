@@ -10,15 +10,15 @@ const Navbar = () => {
 
   return (
     <nav className="absolute top-0 left-0 w-full z-50">
-      <div className="flex justify-between items-center px-6 py-4 bg-transparent text-white h-24">
+      <div className="flex justify-evenly items-center px-6 py-4 bg-transparent text-white h-24">
 
         {/* Centered Links */}
         <div className="flex-1 flex justify-center space-x-20 font-montserrat">
           {[
-            { href: "/", label: "Home" },
+            { href: "/", label: "About" },
             { href: "/service", label: "Service" },
             { href: "/portfolio", label: "Portfolio" },
-            { href: "/blogs", label: "Blogs" },
+            // { href: "/blogs", label: "Blogs" },
           ].map((link) => (
             <Link
               key={link.href}
