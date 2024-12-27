@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGoogle, faLinkedin, faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { FaFacebook, FaGoogle, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer: React.FC = () => {
@@ -8,19 +8,19 @@ const Footer: React.FC = () => {
     <footer className="bg-lime-custom text-black py-5">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left pb-8">
         {/* Social Media Links */}
-        <div className="flex flex-col items-center md:items-start">
-          <div className="flex gap-4 mb-4">
+        <div className="flex flex-col justify-end text-left items-center ">
+          <div className="flex gap-4 mb-2 mr-4 text-2xl">
             <a href="#" className="text-black hover:text-gray-800">
-              <FontAwesomeIcon icon={faGoogle} />
+              <FaGoogle />
             </a>
             <a href="#" className="text-black hover:text-gray-800">
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FaLinkedin />
             </a>
             <a href="#" className="text-black hover:text-gray-800">
-              <FontAwesomeIcon icon={faInstagram} />
+              <FaInstagram />
             </a>
             <a href="#" className="text-black hover:text-gray-800">
-              <FontAwesomeIcon icon={faFacebook} />
+              <FaFacebook />
             </a>
           </div>
         </div>
