@@ -33,9 +33,11 @@ const Navbar = () => {
 
         {/* Contact Button */}
         <div className="flex-none mr-20">
-          <button className="hidden md:block px-4 py-3 bg-lime-custom text-black rounded-xl font-montserrat text-xs font-bold shadow-[0px_0px_30px_5px_rgba(208,216,91,0.73)]">
-            Contact Us
-          </button>
+          <a href="/contact">
+            <button className="hidden md:block px-4 py-3 bg-lime-custom text-black rounded-xl font-montserrat text-xs font-bold shadow-[0px_0px_30px_5px_rgba(208,216,91,0.73)]">
+              Contact Us
+            </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -79,9 +81,11 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <button className="px-4 py-2 bg-lime-custom text-black rounded-md">
-              Contact Us
-            </button>
+            <a href="/contact">
+              <button className="px-4 py-2 bg-lime-custom text-black rounded-md">
+                Contact Us
+              </button>
+            </a>
           </div>
         </div>
       )}

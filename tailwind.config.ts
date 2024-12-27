@@ -11,9 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        lime: {
-          custom: '#B3FF3A',
-        },
+        lime: {custom: '#B3FF3A'},
+        'gray-custom': 'rgba(86, 86, 86, 0.8)'
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
@@ -32,6 +31,10 @@ export default {
       },
       spacing: {
         lg: '28rem',
+      },
+      fontSize: {
+        'xxs': '0.625rem',
+        '9px': '9px',
       },
     },
   },

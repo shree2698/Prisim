@@ -10,7 +10,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ img, title, description }) => {
     return (
         <div
-            className="bg-black border-t-2 border-r-2 border-lime-500 rounded-lg p-6 transition w-[350px] mx-auto flex flex-col justify-between shadow-md hover:shadow-lg"
+            className="bg-black border-t-2 border-r-2 border-lime-custom rounded-lg p-6 transition w-[350px] mx-auto flex flex-col justify-between shadow-md hover:shadow-lg"
         >
             {/* Icon Placeholder */}
             <div>
@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ img, title, description }) => {
                 {/* Read More Link */}
                 <a
                     href="#"
-                    className="text-lime-500 mt-4 inline-block text-sm font-bold hover:underline text-center"
+                    className="text-lime-custom mt-4 inline-block text-sm font-bold hover:underline text-center"
                 >
                     Read more →
                 </a>

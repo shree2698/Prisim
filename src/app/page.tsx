@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import { useRef } from "react";
 import Card from "./components/Card";
 import IC1 from '../app/assets/ic1.png'
+import CallToAction from "./common/CallToAction";
 
 const Home: React.FC = () => {
 
@@ -86,7 +87,7 @@ const Home: React.FC = () => {
         </div>
 
         {/* Carousel Div */}
-        <div className="absolute bottom-6 left-0 w-full bg-lime-500 text-black py-3 -rotate-2 z-20 h-14">
+        <div className="absolute bottom-6 left-0 w-full bg-lime-custom text-black py-3 -rotate-2 z-20 h-14">
           <div className="flex animate-marquee space-x-4">
             {Array(3)
               .fill([
@@ -207,14 +208,14 @@ const Home: React.FC = () => {
             <div className="flex mt-4 px-10">
               <button
                 onClick={scrollLeft}
-                className="bg-transparent border-2 border-lime-500 p-3 m-4 shadow-lg text-lime-500 hover:bg-lime-500 hover:text-black transition"
+                className="bg-transparent border-2 border-lime-custom p-3 m-4 shadow-lg text-lime-custom hover:bg-lime-custom hover:text-black transition"
                 aria-label="Scroll Left"
               >
                 &#8592;
               </button>
               <button
                 onClick={scrollRight}
-                className="bg-lime-500 border-2 border-lime-500 p-3  m-4 shadow-lg text-black hover:bg-transparent hover:text-lime-500 transition"
+                className="bg-lime-custom border-2 border-lime-custom p-3  m-4 shadow-lg text-black hover:bg-transparent hover:text-lime-custom transition"
                 aria-label="Scroll Right"
               >
                 &#8594;
@@ -225,6 +226,7 @@ const Home: React.FC = () => {
 
         </div>
       </div>
+      <CallToAction />
     </div>
   );
 };
