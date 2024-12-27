@@ -27,47 +27,7 @@ const Home: React.FC = () => {
       scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
     }
   };
-  const cards = [
-    {
-      emoji: "📈",
-      title: "SEO Service",
-      description: "Boost your online visibility with our SEO services...",
-      linkText: "Read more →",
-      link: "#",
-    },
-    {
-      emoji: "🎨",
-      title: "UX/UI Design",
-      description:
-        "Our UX/UI Design services focus on creating intuitive, user-friendly designs...",
-      linkText: "Read more →",
-      link: "#",
-    },
-    {
-      emoji: "🛠",
-      title: "Custom Development",
-      description:
-        "Get tailored solutions to meet your unique business needs...",
-      linkText: "Read more →",
-      link: "#",
-    },
-    {
-      emoji: "🛠",
-      title: "Custom Development",
-      description:
-        "Get tailored solutions to meet your unique business needs...",
-      linkText: "Read more →",
-      link: "#",
-    },
-    {
-      emoji: "🛠",
-      title: "Custom Development",
-      description:
-        "Get tailored solutions to meet your unique business needs...",
-      linkText: "Read more →",
-      link: "#",
-    },
-  ];
+
   const cardsData = [
     {
       title: "UX/UI Design",
@@ -105,7 +65,7 @@ const Home: React.FC = () => {
     <div className="bg-gray-800 text-white min-h-screen overflow-hidden">
       <header
         className="relative bg-cover bg-center h-screen"
-        style={{ backgroundImage: `url(${IntroImg.src})` }} // Correct syntax for Next.js
+        style={{ backgroundImage: `url(${IntroImg.src})` }}
       >
         {/* Overlay for background image */}
         <div className="absolute inset-0 bg-black opacity-60"></div>
@@ -233,38 +193,6 @@ const Home: React.FC = () => {
           </div>
 
           {/* Right Content */}
-          {/* <div className="w-full md:w-2/3">
-            <Swiper
-              modules={[Navigation]}
-              navigation
-              spaceBetween={20}
-              slidesPerView={1}
-              breakpoints={{
-                640: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-              }}
-              className="w-full"
-            >
-              {cards.map((card, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-gray-900 border border-lime-500 rounded-lg p-6 hover:shadow-lg transition h-[300px] w-[280px] mx-auto">
-                    <div className="text-lime-500 text-3xl mb-4">
-                      {card.emoji}
-                    </div>
-                    <h3 className="text-xl font-bold">{card.title}</h3>
-                    <p className="text-gray-400 mt-2">{card.description}</p>
-                    <a
-                      href={card.link}
-                      className="text-lime-500 mt-4 inline-block hover:underline"
-                    >
-                      {card.linkText}
-                    </a>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div> */}
           <div className="flex flex-col items-center">
             <div  className="relative flex space-x-6 overflow-x-scroll scrollbar-hide w-full max-w-[80vw] whitespace-nowrap" ref={scrollRef}>
               {cardsData.map((card, index) => (
