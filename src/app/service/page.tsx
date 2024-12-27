@@ -50,14 +50,13 @@ const Service = () => {
     return (
         <div className="bg-gray-800 text-white min-h-screen overflow-hidden">
             {/* Header Section */}
-            <header
+            {/* <header
                 className="relative bg-cover bg-center h-screen"
                 style={{ backgroundImage: `url(${IntroImg.src})` }}
             >
-                {/* Overlay */}
+                
                 <div className="absolute inset-0 bg-black opacity-60"></div>
 
-                {/* Content */}
                 <div className="container mx-auto h-full flex flex-col justify-center items-center text-center relative z-10">
                     <h1 className="text-3xl md:text-5xl font-bold font-poppins">
                         What we Offer
@@ -68,9 +67,26 @@ const Service = () => {
                         development solutions.
                     </p>
                 </div>
-            </header>
+            </header> */}
 
             {/* Cards Section */}
+            <section className="bg-black text-white flex flex-col items-center text-center">
+                {/* Subtitle */}
+                <h4 className="text-lime-custom font-montserrat font-bold text-xs tracking-wide mb-2">
+                    What We Offer
+                </h4>
+
+                {/* Main Title */}
+                <h2 className="text-4xl sm:text-5xl font-bold font-montserrat leading-tight">
+                    Discover Our Expert Service
+                </h2>
+
+                {/* Description */}
+                <p className="text-gray-400 text-sm sm:text-base mt-4 max-w-2xl">
+                    Explore our range of tailored digital solutions, designed to elevate your brand,
+                    boost engagement, and deliver measurable results for your business.
+                </p>
+            </section>
             <div className="bg-black text-white py-36 px-36">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 px-4">
                     {cardsData.map((card, index) => (
@@ -94,9 +110,9 @@ const Service = () => {
             </div>
 
             {/* Projects Section */}
-            <div className="bg-black text-white py-16">
+            {/* <div className="bg-black text-white py-16">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0">
-                    {/* Left Content */}
+                    
                     <div className="text-center md:text-left max-w-lg space-y-6">
                         <div className="bg-green-500 text-sm font-semibold px-4 py-2 rounded-md mb-6 inline-block">
                             Project
@@ -127,7 +143,6 @@ const Service = () => {
                         </button>
                     </div>
 
-                    {/* Right Content */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="relative w-full h-64">
                             <Image
@@ -149,9 +164,8 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <CallToAction />
         </div>
     );
 };

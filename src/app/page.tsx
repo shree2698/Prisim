@@ -12,6 +12,7 @@ import { useRef } from "react";
 import Card from "./components/Card";
 import IC1 from '../app/assets/ic1.png'
 import CallToAction from "./common/CallToAction";
+import Service from "./service/page"
 
 const Home: React.FC = () => {
 
@@ -177,9 +178,9 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black text-white py-16">
+      {/* <div className="bg-black text-white py-16">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-evenly space-y-10 md:space-y-0">
-          {/* Left Hexagonal Image */}
+          
           <div className="text-center md:text-left max-w-lg space-y-6 px-32">
             <h4 className="text-green-500 text-base font-bold font-montserrat text-lime-custom">What We Offer</h4>
             <h2 className="text-3xl md:text-4xl font-medium font-readex">
@@ -193,7 +194,7 @@ const Home: React.FC = () => {
             </button>
           </div>
 
-          {/* Right Content */}
+          
           <div className="flex flex-col items-center">
             <div  className="relative flex space-x-6 overflow-x-scroll scrollbar-hide w-full max-w-[80vw] whitespace-nowrap" ref={scrollRef}>
               {cardsData.map((card, index) => (
@@ -225,8 +226,9 @@ const Home: React.FC = () => {
           </div>
 
         </div>
-      </div>
-      <CallToAction />
+      </div> */}
+      {/* <CallToAction /> */}
+      <Service />
     </div>
   );
 };
